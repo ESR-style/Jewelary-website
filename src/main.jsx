@@ -11,6 +11,7 @@ import Whishlist from './pages/Whishlistpage';
 import Loginpage from './pages/Loginpage';
 import Shopingpage from './pages/Shopingpage';
 import Errorpage from './pages/Errorpage';
+import Storepage from './pages/Storepage';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
     path: "/shop",
     element: <Shopingpage />,
     errorElement: <Errorpage />,
+  },
+  {
+    path: "/store",
+    element: <Storepage />,
   },
   {
     path: "*",
