@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     errorElement: <Errorpage />,
   },
   {
-    path: "/Whishlist",
+    path: "/wishlist",
     element: <Whishlist />,
     errorElement: <Errorpage />,
   },
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     errorElement: <Errorpage />,
   },
   {
-    path: "/store",
+    path: "/stores",
     element: <Storepage />,
   },
   {
