@@ -25,7 +25,7 @@ const Navbar = () => {
       </Link>
 
         {/* Search Bar for larger screens */}
-        <div className="flex-grow mx-4 flex justify-center hidden md:flex">
+        <div className="flex-grow mx-4 justify-center hidden md:flex">
           <div className="relative w-1/2 max-w-xs">
             <input
               type="text"
