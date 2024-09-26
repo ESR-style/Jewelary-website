@@ -40,7 +40,7 @@ const CategoryStrip = () => {
   };
 
   return (
-    <div className="hidden md:block bg-gradient-to-r from-gold-500 to-gold-600 shadow-md">
+    <div className="hidden md:block bg-gradient-to-r from-gold-500 to-gold-600 shadow-md z-20 relative">
       <div className="container mx-auto flex justify-around p-2">
         {categories.map((category) => (
           <div
@@ -53,7 +53,7 @@ const CategoryStrip = () => {
               {category.name}
             </button>
             <div
-              className={`absolute left-4 top-full -mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-opacity duration-300 ease-in-out transform ${
+              className={`absolute left-4 top-full -mt-2 w-48 rounded-md shadow-lg bg-black ring-1 ring-gold-500 ring-opacity-5 transition-opacity duration-300 ease-in-out transform ${
                 hoveredCategory === category.name ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
               }`}
             >
@@ -62,7 +62,7 @@ const CategoryStrip = () => {
                   <Link
                     key={subcategory}
                     to={`/shop?category=${category.name.toLowerCase()}&subcategory=${subcategory.toLowerCase()}`}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-white hover:text-gold-500 hover:bg-gray-800"
                   >
                     {subcategory}
                   </Link>

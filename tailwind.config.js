@@ -23,6 +23,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
+        
         mytheme: {
           "primary": "#D4AF37", // Gold
           "secondary": "#C0C0C0", // Silver
