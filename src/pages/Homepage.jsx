@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Video from '../components/Video'
+import Collection from '../components/Collection'
 
 
 const Homepage = () => {
@@ -8,6 +9,7 @@ const Homepage = () => {
     <div>
       <Navbar />
       <Video />
+      <Collection />
     </div>
   )
 }
