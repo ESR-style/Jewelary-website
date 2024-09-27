@@ -15,6 +15,15 @@ module.exports = {
           600: '#A8A8A8',
         },
       },
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeInUp: 'fadeInUp 0.5s forwards',
+      },
     },
   },
   plugins: [
@@ -23,7 +32,6 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        
         mytheme: {
           "primary": "#D4AF37", // Gold
           "secondary": "#C0C0C0", // Silver

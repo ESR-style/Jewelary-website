@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Poster = () => {
   const posters = [
@@ -23,9 +25,12 @@ const Poster = () => {
           <h2 className="text-4xl font-bold text-shadow-lg mb-5">
             Amazing Deals<br />Just for You!
           </h2>
+
+          <Link to={'/shop'}>
           <button className="px-5 py-2 bg-white bg-opacity-20 text-white border-2 border-white cursor-pointer backdrop-blur-md z-10 text-lg font-bold">
             Shop Now
           </button>
+          </Link>
         </div>
         <div className="flex justify-center">
           <img src={posters[currentPoster]} alt="Poster" className="w-full h-auto max-h-screen" />

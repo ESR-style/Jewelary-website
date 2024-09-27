@@ -111,9 +111,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
-      {/* Category Strip */}
-      <CategoryStrip />
+ 
     </>
   );
 }
